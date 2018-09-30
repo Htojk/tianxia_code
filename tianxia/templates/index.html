@@ -1,0 +1,621 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    首页
+{% endblock %}
+
+{% block main %}
+    <hr>
+<div class="container">
+    <div class="row">
+        <div class="col-md-7">
+            <div class="banner">
+                <div class="banner_imgs">
+                    <ul>
+                        <li class="one_img"><img style="height: 450px;width: 700px;" src={% static 'base/imgs/1.jpg' %} alt=""></li>
+                        <li class="one_img"><img style="height: 450px;width: 700px;" src={% static 'base/imgs/2.jpg' %} alt=""></li>
+                        <li class="one_img"><img style="height: 450px;width: 700px;" src={% static 'base/imgs/1.jpg' %} alt=""></li>
+                        <li class="one_img"><img style="height: 450px;width: 700px;" src={% static 'base/imgs/1.jpg' %} alt=""></li>
+                        <li class="one_img"><img style="height: 450px;width: 700px;" src={% static 'base/imgs/1.jpg' %} alt=""></li>
+                    </ul>
+                </div>
+                <div class="tab_list">
+                    <ul>
+                        <li class="circle_btn circle_btn_active"></li>
+                        <li class="circle_btn"></li>
+                        <li class="circle_btn"></li>
+                        <li class="circle_btn"></li>
+                        <li class="circle_btn"></li>
+                    </ul>
+                </div>
+                <div class="text_area">
+                    <p>文章简介</p>
+                </div>
+                <div class="tab_btn left_btn">
+
+                </div>
+                <div class="tab_btn right_btn">
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-md-offset-1 col-md-4">
+            <div class="artical_recommend">
+                <span style="font-size: 30px;">每日推荐</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <span><a href="" class="more_a">更多>></a></span>
+                <hr>
+                <ul>
+                    <li>
+                        <span>1</span>&nbsp;
+                        <a href="#">世界</a>
+                    </li>
+                    <li>
+                        <span>2</span>&nbsp;
+                        <a href="#">慌乱</a>
+                    </li>
+                    <li>
+                        <span>3</span>&nbsp;
+                        <a href="#">兵王</a>
+                    </li>
+                    <li>
+                        <span>4</span>&nbsp;
+                        <a href="#">铁血</a>
+                    </li>
+                    <li>
+                        <span>5</span>&nbsp;
+                        <a href="#">柔情</a>
+                    </li>
+                    <li>
+                        <span>6</span>&nbsp;
+                        <a href="#">这是</a>
+                    </li>
+                    <li>
+                        <span>7</span>&nbsp;
+                        <a href="#">不知道</a>
+                    </li>
+                    <li>
+                        <span>8</span>&nbsp;
+                        <a href="#">天下</a>
+                    </li>
+                    <li>
+                        <span>9</span>&nbsp;
+                        <a href="#">红颜</a>
+                    </li>
+                    <li>
+                        <span>10</span>&nbsp;
+                        <a href="#">莫愁</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <hr>
+{#    小说模块 #}
+    <div class="articals_kind_details">
+         <div class="articals_kind">
+            <div class="articals_kind_title">
+                <div class="articals_kind_title_left">
+                    <a href="#">热推小说</a>
+                </div>
+                <div class="articals_kind_title_right">
+                    <span><a href="#">文章一很长的题目</a>&nbsp;<a>|</a>&nbsp;</span>
+                    <span><a href="#">文章二</a></span>
+                </div>
+            </div>
+             <div class="articals_kind_body">
+                 <div class="articals_kind_body_left">
+                     <div class="articals_kind_body_left_img">
+
+
+                     </div>
+                     <div class="articals_kind_body_left_descriptions">
+                         <hr>
+                         <ul>
+                             <li><a href="#">《小说名》</a></li>
+                             <li>作者：<a href="#">作者名</a></li>
+                         </ul>
+                     </div>
+                 </div>
+                 <div class="articals_kind_body_right">
+                     <div class="top_list_left">
+                         <ul class="top_ten">
+                        <li>
+                            <span class="top_icon top_three">
+                                1
+                            </span>
+                            &nbsp;&nbsp;<a href="#">测试文章一</a>
+                            <hr class="top_ten_hr">
+                        </li>
+                        <li>
+                            <span class="top_icon top_three">
+                                1
+                            </span>
+                            &nbsp;&nbsp;<a href="#">测试文章一</a>
+                            <hr class="top_ten_hr">
+                        </li>
+                         <li>
+                            <span class="top_icon top_three">
+                                1
+                            </span>
+                            &nbsp;&nbsp;<a href="#">测试文章一</a>
+                            <hr class="top_ten_hr">
+                        </li>
+                         <li>
+                            <span class="top_icon">
+                                1
+                            </span>
+                            &nbsp;&nbsp;<a href="#">测试文章一</a>
+                            <hr class="top_ten_hr">
+                        </li>
+                         <li>
+                            <span class="top_icon">
+                                1
+                            </span>
+                            &nbsp;&nbsp;<a href="#">测试文章一</a>
+                            <hr class="top_ten_hr">
+                        </li>
+                         <li>
+                            <span class="top_icon">
+                                1
+                            </span>
+                            &nbsp;&nbsp;<a href="#">测试文章一</a>
+                            <hr class="top_ten_hr">
+                        </li>
+                         <li>
+                            <span class="top_icon">
+                                1
+                            </span>
+                            &nbsp;&nbsp;<a href="#">测试文章一</a>
+                            <hr class="top_ten_hr">
+                        </li>
+                         <li>
+                            <span class="top_icon">
+                                1
+                            </span>
+                            &nbsp;&nbsp;<a href="#">测试文章一</a>
+                            <hr class="top_ten_hr">
+                        </li>
+                         <li>
+                            <span class="top_icon">
+                                1
+                            </span>
+                            &nbsp;&nbsp;<a href="#">测试文章一</a>
+                            <hr class="top_ten_hr">
+                        </li>
+                         <li>
+                            <span class="top_icon">
+                                1
+                            </span>
+                            &nbsp;&nbsp;<a href="#">测试文章一</a>
+                            <hr class="top_ten_hr">
+                        </li>
+
+                    </ul>
+                     </div>
+                     <div class="top_list_right">
+                         <ul class="top_ten">
+                        <li>
+                            <span class="top_icon">
+                                1
+                            </span>
+                            &nbsp;&nbsp;<a href="#">测试文章一</a>
+                            <hr class="top_ten_hr">
+                        </li>
+                        <li>
+                            <span class="top_icon">
+                                1
+                            </span>
+                            &nbsp;&nbsp;<a href="#">测试文章一</a>
+                            <hr class="top_ten_hr">
+                        </li>
+                         <li>
+                            <span class="top_icon">
+                                1
+                            </span>
+                            &nbsp;&nbsp;<a href="#">测试文章一</a>
+                            <hr class="top_ten_hr">
+                        </li>
+                         <li>
+                            <span class="top_icon">
+                                1
+                            </span>
+                            &nbsp;&nbsp;<a href="#">测试文章一</a>
+                            <hr class="top_ten_hr">
+                        </li>
+                         <li>
+                            <span class="top_icon">
+                                1
+                            </span>
+                            &nbsp;&nbsp;<a href="#">测试文章一</a>
+                            <hr class="top_ten_hr">
+                        </li>
+                         <li>
+                            <span class="top_icon">
+                                1
+                            </span>
+                            &nbsp;&nbsp;<a href="#">测试文章一</a>
+                            <hr class="top_ten_hr">
+                        </li>
+                         <li>
+                            <span class="top_icon">
+                                1
+                            </span>
+                            &nbsp;&nbsp;<a href="#">测试文章一</a>
+                            <hr class="top_ten_hr">
+                        </li>
+                         <li>
+                            <span class="top_icon">
+                                1
+                            </span>
+                            &nbsp;&nbsp;<a href="#">测试文章一</a>
+                            <hr class="top_ten_hr">
+                        </li>
+                         <li>
+                            <span class="top_icon">
+                                1
+                            </span>
+                            &nbsp;&nbsp;<a href="#">测试文章一</a>
+                            <hr class="top_ten_hr">
+                        </li>
+                         <li>
+                            <span class="top_icon">
+                                1
+                            </span>
+                            &nbsp;&nbsp;<a href="#">测试文章一</a>
+                            <hr class="top_ten_hr">
+                        </li>
+
+                    </ul>
+                     </div>
+                 </div>
+             </div>
+        </div>
+        <div class="update_nowdays  notice_board">
+            <div class="update_nowdays_title notice_board_title">
+                <p>最近更新</p>
+            </div>
+            <div class="update_list" style="border: 1px solid red;height:360px;width: 100%">
+                    <ul class="show_list_ul">
+                        <li>《<a href="#">作品名</a>》<a>第一章：邻家有女出长成</a></li>
+                        <li>《<a href="#">作品名</a>》<a>第一章：邻家有女出长成</a></li>
+                        <li>《<a href="#">作品名</a>》<a>第一章：邻家有女出长成</a></li>
+                        <li>《<a href="#">作品名</a>》<a>第一章：邻家有女出长成</a></li>
+                        <li>《<a href="#">作品名</a>》<a>第一章：邻家有女出长成</a></li>
+                        <li>《<a href="#">作品名</a>》<a>第一章：邻家有女出长成</a></li>
+                        <li>《<a href="#">作品名</a>》<a>第一章：邻家有女出长成</a></li>
+                        <li>《<a href="#">作品名</a>》<a>第一章：邻家有女出长成</a></li>
+                        <li>《<a href="#">作品名</a>》<a>第一章：邻家有女出长成</a></li>
+                        <li>《<a href="#">作品名</a>》<a>第一章：邻家有女出长成</a></li>
+                    </ul>
+            </div>
+        </div>
+        <div class="articals_welcomed notice_board">
+            <div class="articals_welcomed notice_board_title">
+                <p>最受欢迎</p>
+            </div>
+             <div class="popular_list" style="border: 1px solid red;height:360px;width: 100%">
+                    <ul class="show_list_ul">
+                        <li>《<a href="#">作品名</a>》作者：<a href="#">天下</a>阅读量：10000</li>
+                        <li>《<a href="#">作品名</a>》作者：<a href="#">天下</a>阅读量：10000</li>
+                        <li>《<a href="#">作品名</a>》作者：<a href="#">天下</a>阅读量：10000</li>
+                        <li>《<a href="#">作品名</a>》作者：<a href="#">天下</a>阅读量：10000</li>
+                        <li>《<a href="#">作品名</a>》作者：<a href="#">天下</a>阅读量：10000</li>
+                        <li>《<a href="#">作品名</a>》作者：<a href="#">天下</a>阅读量：10000</li>
+                        <li>《<a href="#">作品名</a>》作者：<a href="#">天下</a>阅读量：10000</li>
+                        <li>《<a href="#">作品名</a>》作者：<a href="#">天下</a>阅读量：10000</li>
+                        <li>《<a href="#">作品名</a>》作者：<a href="#">天下</a>阅读量：10000</li>
+                        <li>《<a href="#">作品名</a>》作者：<a href="#">天下</a>阅读量：10000</li>
+
+                    </ul>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+    <style>
+        .banner{
+            width:750px;
+            height:450px;
+            border: 1px solid red;
+            position: relative;
+        }
+        .artical_recommend{
+            width: 360px;
+            height: 450px;
+            border: 1px solid blue;
+        }
+        .container li{
+
+        }
+        .banner_imgs li{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            {#display: none;#}
+        }
+        {#.banner_imgs li:first-child#}
+        {#{#}
+        {#    display: block;#}
+        .tab_list{
+            width: 150px;
+            height: 20px;
+            border: 1px solid black;
+            position: absolute;
+            left: 225px;
+            bottom: 30px;
+        }
+        .tab_list li{
+            float:left;
+            margin-left: 12px;
+            height: 15px;
+            width: 15px;
+            line-height: 15px;
+            border-radius: 50%;
+            border: 1px solid #40403e;
+            background: grey;
+        }
+        .tab_list li:hover{
+            background: white;
+        }
+        .tab_list ul .circle_btn_active{
+            background: white;
+            border: 1px solid grey;
+        }
+        .tab_btn{
+            width: 40px;
+            height: 90px;
+            border: 1px solid blue;
+            position: absolute;
+            top:165px;
+        }
+        .left_btn{
+            left: 10px;
+            background-image: url("{% static 'base/imgs/icon-slides.png' %}");
+            background-position-x: 80px;
+        }
+        .left_btn:hover{
+            background-position-x: 160px;
+        }
+        .right_btn{
+            right: 10px;
+            background-image: url("{% static 'base/imgs/icon-slides.png' %}");
+            background-position-x: 40px;
+        }
+
+        .right_btn:hover{
+            background-position-x:120px ;
+        }
+
+        .text_area{
+            border: 1px solid burlywood;
+            width:400px;
+            height: 100px;
+            position: absolute;
+            bottom:80px;
+            left: 150px;
+        }
+
+        .artical_recommend li span{
+            font-size: 14px;
+            height: 30px;
+            width: 30px;
+            border-radius: 20px;
+            line-height: 30px;
+            text-align: center;
+            float: left;
+            background-image: url("{% static 'index/imgs/circle_icon.jpg' %}");
+        }
+        .artical_recommend li a{
+            outline-style: none;
+            font-size: 20px;
+            line-height: 30px;
+            color: black;
+        }
+        .artical_recommend ul{
+            margin-top: -14px;
+        }
+        .artical_recommend li{
+            padding-top: 6px;
+        }
+        {# 作品展示界面 #}
+        .articals_kind_details{
+            height: 400px;
+            width: 100%;
+            border: 1px solid green;
+        }
+        .articals_kind{
+            height:400px;
+            width:600px;
+            {#border: 1px solid red;#}
+            float:left;
+        }
+        .articals_kind_title{
+            background-image: url("{% static 'index/imgs/articals_show_title.png' %}");
+            width: 100%;
+            height: 40px;
+        }
+        .articals_kind_title_left{
+            height: 40px;
+            width:240px;
+            border: 1px solid black;
+            text-align: center;
+            float:left;
+        }
+        .articals_kind_title_left a{
+            line-height: 40px;
+            font-size: 20px;
+            color: white;
+            font-family: 楷体;
+        }
+         .articals_kind_title_right a{
+            line-height: 40px;
+            font-size: 12px;
+            color: white;
+        }
+        .articals_kind_title_right{
+            float:left;
+            height: 31px;
+            width: 330px;
+            border:1px solid black;
+            margin-top: 8px;
+            margin-left: 20px;
+        }
+        .articals_kind_body{
+            height: 360px;
+            width: 100%;
+            border-bottom:2px solid lightgrey;
+            border-left: 2px solid lightgrey;
+            border-right: 2px solid lightgrey;
+        }
+        .articals_kind_body_left{
+            float:left;
+            width: 200px;
+            height: 100%;
+            margin-left: 35px;
+        }
+        .articals_kind_body_left_img{
+            width: 150px;
+            height: 200px;
+            border: 2px solid #3a3e40;
+            margin-left: 25px;
+            margin-top: 30px;
+            background-image: url("{% static 'index/imgs/circle_icon.jpg' %}");
+        }
+
+        .articals_kind_body_left_descriptions{
+            width:150px;
+            height: 60px;
+            margin-top: 20px;
+            margin-left: 25px;
+            text-align: center;
+        }
+        .articals_kind_body_right{
+            float:left;
+            width: 320px;
+            height: 100%;
+            margin-left: 20px;
+        }
+        .top_list_left{
+            float: left;
+            width: 160px;
+            height: 100%;
+            border: 1px solid green;
+        }
+        .top_list_right{
+            float: left;
+            width: 160px;
+            height: 100%;
+            border: 1px solid green;
+        }
+
+        .top_ten{
+            margin-top: 30px;
+        }
+        .top_ten li .top_three{
+            background: #4095D5;
+        }
+        .top_ten li{
+            margin-top: 5px;
+            height: 25px;
+            width: 100%;
+        }
+        .top_ten a{
+            color: black;
+            font-size: 12px;
+        }
+        .top_ten_hr{
+            margin-top: 2px;
+        }
+        .top_icon{
+            height: 15px;
+            width: 15px;
+            background: lightslategrey;
+            float: left;
+            text-align: center;
+            line-height: 15px;
+            color: white;
+            font-size: 12px;
+            margin-top: 1px;
+        }
+        .notice_board{
+            height: 100%;
+            width: 250px;
+            border: 1px solid red;
+            float:left;
+            margin-left:19px;
+        }
+        .notice_board_title{
+            height: 40px;
+            width: 100%;
+            background: #4095D5;
+            text-align: center;
+            line-height: 40px;
+            font-size: 20px;
+            font-family: 楷体;
+        }
+        .notice_board_title {
+            color: white;
+        }
+        .show_list_ul{
+            margin-top: 20px;
+        }
+        .show_list_ul li{
+            height: 25px;
+            width: 100%;
+            border: 1px solid black;
+            text-align: left;
+            line-height: 25px;
+            font-size: 12px;
+            margin-top: 6px;
+        }
+
+    </style>
+    <script>
+        {# 轮播图有以下内容可改进：#}
+        {# 1.当鼠标进入轮播图时，停止自动轮播 #}
+        {# 2.效果太过于单一，可以增加其他功能 #}
+    $(document).ready(function () {
+        index=0;
+        timer=setInterval(function () {
+            index++;
+            if(index==5){index=0}
+            $('.circle_btn').eq(index).addClass('circle_btn_active').siblings().removeClass('circle_btn_active')
+            $('.one_img').eq(index).fadeIn().siblings().fadeOut()
+            $('.one_img').eq(index).show().siblings().hide()
+        },8000);
+        $(".circle_btn").click(function () {
+         index=$(this).index();
+         $('.circle_btn').eq(index).addClass('circle_btn_active').siblings().removeClass('circle_btn_active')
+         $('.one_img').eq(index).fadeIn().siblings().fadeOut()
+         $('.one_img').eq(index).show().siblings().hide()
+     });
+     $('.left_btn').click(function () {
+         index=$('.circle_btn_active').index();
+         if(index==0)
+             index=4{# 此处可以改为图片的总数减一 #}
+         else
+             index--;
+         $('.circle_btn').eq(index).addClass('circle_btn_active').siblings().removeClass('circle_btn_active')
+         $('.one_img').eq(index).fadeIn().siblings().fadeOut()
+         $('.one_img').eq(index).show().siblings().hide()
+     });
+     $('.right_btn').click(function () {
+         index=$('.circle_btn_active').index();
+         if(index==4)
+             index=0{# 此处可以改为图片的总数减一 #}
+         else
+             index++;
+         $('.circle_btn').eq(index).addClass('circle_btn_active').siblings().removeClass('circle_btn_active')
+         $('.one_img').eq(index).fadeIn().siblings().fadeOut()
+         $('.one_img').eq(index).show().siblings().hide()
+     });
+
+    })
+    </script>
+{% endblock %}
+
