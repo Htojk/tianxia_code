@@ -1,0 +1,111 @@
+{% extends 'base.html' %}
+{% block title %}
+    注册
+{% endblock %}
+
+{% block main %}
+    <div class="container">
+        {{ register_form.errors }}
+        <div class="body">
+            <h1>用户注册</h1>
+            <form action="" method="post">
+{#                {{ register_form }}#}
+                {% csrf_token %}
+                 <div class="body_left">
+                    <ul>
+                        <li>用户名</li>
+                        <li>昵称</li>
+                        <li>邮箱</li>
+                        <li>密码</li>
+                        <li>确认密码</li>
+                        <li>验证码</li>
+                    </ul>
+                </div>
+                <div class="body_mid">
+                    <ul>
+                        <li><input type="text" name="username"></li>
+                        <li><input type="text" name="nickname"></li>
+                        <li><input type="email" name="email"></li>
+                        <li><input type="password" name="password1" required id='id_password1'></li>
+                        <li><input type="password" name="password2" required id='id_password2'></li>
+                        <li><input type='text' name="identifyingcode"></li>
+                    </ul>
+                </div>
+                <div class="body_right">
+                    <ul>
+                        <li><p></p></li>
+                        <li><p></p></li>
+                        <li><p>不能与其他人他太相似，不少于八位，不能全部为数字</p></li>
+                        <li><p>请输入与上面相同的密码</p></li>
+                        <li><p></p></li>
+                        <li><p></p></li>
+                    </ul>
+                </div>
+                <button class="btn">确认注册</button>
+            </form>
+
+        </div>
+    </div>
+
+    <style>
+        .body{
+            width: 900px;
+            height: 800px;
+            margin: 0 auto;
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        .body_left{
+            float:left;
+            width: 100px;
+            height: 500px;
+            border: 1px solid red;
+            margin-left: 30px;
+        }
+
+        .body_left li{
+            width: 90px;
+            height: 40px;
+            border: 1px solid blue;
+            margin-top: 30px;
+            font-size: 20px;
+            line-height: 40px;
+            text-align: right;
+        }
+        .body_mid{
+            float:left;
+            width: 400px;
+            height: 500px;
+            border: 1px solid green;
+            margin-left: 10px;
+        }
+        .body_mid li{
+            width: 350px;
+            height: 40px;
+            margin-top: 30px;
+            font-size: 20px;
+            line-height: 40px;
+            text-align: left;
+        }
+        .body_mid input{
+            width: 350px;
+        }
+        .body_right{
+            float:left;
+            width: 300px;
+            height: 500px;
+            border: 1px solid green;
+            margin-left: 10px;
+        }
+        .body_right li{
+            width: 260px;
+            height: 40px;
+            margin-top: 30px;
+            text-align: left;
+            border: 1px solid black;
+
+        }
+    </style>
+{% endblock %}
+

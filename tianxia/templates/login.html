@@ -1,0 +1,79 @@
+{% extends 'base.html' %}
+{% load  static %}
+
+
+{% block title %}
+    登录
+{% endblock %}
+
+
+{% block main %}
+<div class="container">
+    <div class="login_body">
+        <div class="body_left">
+            <form action="" method="post">
+                {% csrf_token %}
+                <h1>用户登录</h1>
+                <ul>
+                    <li>账号：<input type="text" name="username"></li>
+                    <li>密码：<input type="password" name="password"></li>
+                    <li><button>登录</button></li>
+                </ul>
+            </form>
+            <div class="errors">
+                {{ errors }}
+            </div>
+            <div class="to_index"><a href="{% url 'users:index' %}">返回首页</a></div>
+        </div>
+        <div class="body_right">
+
+            <h1>用户注册</h1>
+            <p>还没有账户？</p>
+            <p><a href="">点我注册</a></p>
+        </div>
+    </div>
+
+</div>
+    <style>
+        .login_body{
+            margin: 0 auto;
+            width: 804px;
+            height: 500px;
+            border: 1px solid lightgrey;
+        }
+        .body_left{
+            float:left;
+            width: 600px;
+            height: 100%;
+            border-right: 1px solid lightgrey;
+        }
+        .body_left h1,.body_right h1{
+            margin-top: 100px;
+            text-align: center;
+        }
+        .body_left ul{
+            margin-top: 30px;
+            text-align: center;
+        }
+        .body_left li{
+            margin-top: 20px;
+        }
+        .body_right{
+            float: left;
+            width: 200px;
+            height: 100%;
+            text-align: center;
+        }
+        .to_index{
+            margin-top: 10px;
+            margin-left: 450px;
+        }
+        .errors{
+            width: 400px;
+            height: 100px;
+            margin: 0 auto;
+            margin-top: 50px;
+            text-align: center;
+        }
+    </style>
+{% endblock %}

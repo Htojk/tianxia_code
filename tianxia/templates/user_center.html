@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+
+{% block main %}
+    <div class="content">
+        <h1>个人中心</h1>
+        <div class="box">
+            <a href="/changeMessage/">编辑个人信息</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="/changePassword/">修改密码</a>
+        </div>
+        <hr>
+        <hr>
+        <h4 class="little_title">基本信息</h4>
+        <div class="basic_message box">
+            <ul>
+                <li>用户名：{{ user.username }}</li>
+                <li>昵称：{{ user.ordernaryuser.nickname }}</li>
+                <li>邮箱：{{ user.email }}</li>
+                <li>会员等级：1级</li>
+                <li>所属团队：天下文学</li>
+            </ul>
+        </div>
+        <hr>
+        <h4 class="little_title">文章列表</h4>
+        <div class="articals_message box">
+        </div>
+    </div>
+    <style>
+        .content{
+            width:800px;
+            height: 1000px;
+            border: 1px solid red;
+            margin:0  auto;
+        }
+        h1,h4{
+            text-align: center;
+        }
+        .box{
+            width: 600px;
+            margin: 0 auto;
+            {#border: 1px solid green;#}
+        }
+        .basic_message{
+            height: auto
+        }
+        .basic_message ul{
+            margin-left: 180px;
+            margin-top: 30px;
+            text-align: left;
+        }
+        .basic_message li{
+            margin-top: 15px;
+
+        }
+        .articals_message{
+            height: auto;
+        }
+
+    </style>
+{% endblock %}

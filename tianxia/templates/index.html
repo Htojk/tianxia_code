@@ -13,11 +13,17 @@
             <div class="banner">
                 <div class="banner_imgs">
                     <ul>
-                        <li class="one_img"><img style="height: 450px;width: 700px;" src={% static 'base/imgs/1.jpg' %} alt=""></li>
-                        <li class="one_img"><img style="height: 450px;width: 700px;" src={% static 'base/imgs/2.jpg' %} alt=""></li>
-                        <li class="one_img"><img style="height: 450px;width: 700px;" src={% static 'base/imgs/1.jpg' %} alt=""></li>
-                        <li class="one_img"><img style="height: 450px;width: 700px;" src={% static 'base/imgs/1.jpg' %} alt=""></li>
-                        <li class="one_img"><img style="height: 450px;width: 700px;" src={% static 'base/imgs/1.jpg' %} alt=""></li>
+                        {% for artical in articals %}
+                            <li class="one_img"><a href="/pictures_show/{{ artical.id }}/"><img src="{{ artical.picture.url }}" alt=""></a></li>
+                            <div class="text_area">
+                                <p>{{ artical.description }}</p>
+                            </div>
+                        {% endfor %}
+{#                        <li class="one_img"><img style="height: 450px;width: 700px;" src={% static 'base/imgs/1.jpg' %} alt=""></li>#}
+{#                        <li class="one_img"><img style="height: 450px;width: 700px;" src={% static 'base/imgs/2.jpg' %} alt=""></li>#}
+{#                        <li class="one_img"><img style="height: 450px;width: 700px;" src={% static 'base/imgs/1.jpg' %} alt=""></li>#}
+{#                        <li class="one_img"><img style="height: 450px;width: 700px;" src={% static 'base/imgs/1.jpg' %} alt=""></li>#}
+{#                        <li class="one_img"><img style="height: 450px;width: 700px;" src={% static 'base/imgs/1.jpg' %} alt=""></li>#}
                     </ul>
                 </div>
                 <div class="tab_list">
@@ -29,9 +35,7 @@
                         <li class="circle_btn"></li>
                     </ul>
                 </div>
-                <div class="text_area">
-                    <p>文章简介</p>
-                </div>
+
                 <div class="tab_btn left_btn">
 
                 </div>
@@ -98,7 +102,7 @@
          <div class="articals_kind">
             <div class="articals_kind_title">
                 <div class="articals_kind_title_left">
-                    <a href="#">热推小说</a>
+                    <a href="#">热门文章</a>
                 </div>
                 <div class="articals_kind_title_right">
                     <span><a href="#">文章一很长的题目</a>&nbsp;<a>|</a>&nbsp;</span>
@@ -315,8 +319,6 @@
     </div>
 
 </div>
-
-
     <style>
         .banner{
             width:750px;
@@ -398,6 +400,8 @@
             position: absolute;
             bottom:80px;
             left: 150px;
+            font-family: 楷体;
+            color: #bce8f1;
         }
 
         .artical_recommend li span{
@@ -587,12 +591,14 @@
             $('.circle_btn').eq(index).addClass('circle_btn_active').siblings().removeClass('circle_btn_active')
             $('.one_img').eq(index).fadeIn().siblings().fadeOut()
             $('.one_img').eq(index).show().siblings().hide()
+            $('.text_area').eq(index).show()
         },8000);
         $(".circle_btn").click(function () {
          index=$(this).index();
          $('.circle_btn').eq(index).addClass('circle_btn_active').siblings().removeClass('circle_btn_active')
          $('.one_img').eq(index).fadeIn().siblings().fadeOut()
          $('.one_img').eq(index).show().siblings().hide()
+         $('.text_area').eq(index).show()
      });
      $('.left_btn').click(function () {
          index=$('.circle_btn_active').index();
@@ -603,6 +609,7 @@
          $('.circle_btn').eq(index).addClass('circle_btn_active').siblings().removeClass('circle_btn_active')
          $('.one_img').eq(index).fadeIn().siblings().fadeOut()
          $('.one_img').eq(index).show().siblings().hide()
+         $('.text_area').eq(index).show()
      });
      $('.right_btn').click(function () {
          index=$('.circle_btn_active').index();
@@ -613,6 +620,7 @@
          $('.circle_btn').eq(index).addClass('circle_btn_active').siblings().removeClass('circle_btn_active')
          $('.one_img').eq(index).fadeIn().siblings().fadeOut()
          $('.one_img').eq(index).show().siblings().hide()
+         $('.text_area').eq(index).show()
      });
 
     })

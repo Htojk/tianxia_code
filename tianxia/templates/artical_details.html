@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% block main %}
+    <div class="content">
+        <div class="content_details">
+            <h4>{{ artical.title }}</h4>
+            <p>作者：{{ artical.author }}&nbsp;&nbsp;&nbsp;&nbsp;更新时间：{{ artical.create_time }}&nbsp;&nbsp;&nbsp;&nbsp;阅读量：{{ artical.read_num }}</p>
+            <hr>
+            {{ artical.content|safe }}
+        </div>
+        <hr>
+        <hr>
+        <div class="communicate">
+            <a href="">打赏</a>
+            <a href="">投月票</a>
+            <a href="">点赞</a>
+            <a href="">评论</a>
+            <a href="">下一篇：</a>
+            <a href="">上一篇：</a>
+        </div>
+    </div>
+
+
+    <style>
+        .content{
+            margin:0 auto;
+            width: 840px;
+            height: auto;
+            border: 2px solid lightslategrey;
+        }
+        .content_details{
+            margin: 0px auto;
+            margin-top: 20px;
+            width: 780px;
+            height: auto;
+        }
+        .communicate{
+            margin-bottom:10px;
+            text-align: center;
+        }
+    </style>
+{% endblock %}
+
