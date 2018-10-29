@@ -76,7 +76,6 @@ def Artical_test_view(request):
     return render(request,'artical_details.html')
 
 def Pictures_show_details_view(request,id):
-
     all_message=show_pictures_index.objects.filter(id=id)
     artical=all_message[0].artical
     content={'artical':artical,'id':id}
